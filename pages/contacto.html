@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../img/unnamed.jpg" type="image/x-icon">
+    <title>COTILLON TUTTO DOLCE</title>
+</head>
+<body>
+    <header>
+        <img src="../img/istockphoto-1289805061-612x612.jpg" alt="logo del negocio">
+        <h1 id="titulo">COTILLON TUTTO DOLCE</h1>
+        <nav>
+            <ul  class="lista-nav">
+                <li><a href="../index.html">Inicio</a></li> 
+                <li><a href="como-llegar.html">Como llegar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="productos.html">Producto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Formulario</h2>
+        
+        <form>
+            <p class="registrate">REGISTRATE:</p>
+            <div class="formulario">
+                <label for="nombre"> NOMBRE Y APELLIDO: </label>
+                <input type="text" id="nombre">
+            </div>
+
+            <div class="formulario" >
+                <label for="dni">NUMERO DE DNI:</label>
+                <input type="number" id="dni">
+            </div>
+            <div  class="formulario" >
+                <label for="contraseña">CONTRASEÑA:</label>
+                <input type="password" id="contraseña">
+            </div>
+            <div  class="formulario" >
+                <label for="email">EMAIL:</label>
+                <input type="text" id="email">
+            </div>
+            <div  class="formulario" >
+                <label for="numero">TELEFONO:</label>
+                <input type="tel" id="numero">
+            </div>
+            <div class="formulario" >
+                <p class="genero">GENERO:</p>
+                
+                <label for="masculino">Masculino</label>
+                <input type="radio"  id="masculino" name="genero"  >
+
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="genero"   id="femenino">
+
+                <label for="no bi">No binario</label>
+                <input type="radio" name="genero"   id="no bi">
+
+            </div>
+            <!--SIEMPRE DENTRO DE UN SELECT VA UN OPTION-->
+            <div  class="formulario" > 
+                <label for="opciones">PAIS:</label>
+                <select  id="opciones">
+                    <option disabled>-Selecciona una opcion</option>
+                    <option >Argentina</option>
+                    <option >Colombia</option>
+                    <option >Chile</option>
+                    <option >Ecuador</option>
+                    <option >Brasil</option>
+                </select>
+            </div>
+            <div  class="formulario" >
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Limpiar Formulario">
+            </div>
+            
+        </form>
+    </section>
+
+    <footer >
+        <div class="logo1">
+            <img  src="../img/instagram.png" alt="logo de instagram">
+            <img  src="../img/facebook.png" alt="logo de facebook">
+            <img  src="../img/whatsapp.png" alt="logo de whatsapp">
+        </div>
+            <p>Todos los Derechos Reservados para Cotillon Tutto Dolce</p>
+        </footer>
+</body>
+</html>

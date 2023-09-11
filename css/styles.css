@@ -1,0 +1,187 @@
+/*FORMULARIO*/
+form div label,.genero{
+    color: white;
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form{
+    border: dotted 5px palevioletred;
+    height: 550px;
+    width: 450px;
+    padding: 20px;
+    margin: auto;
+}
+
+/*FORMULARIO CENTRO LOS ELEMENTOS*/
+.formulario{
+    text-align: center;
+    margin-bottom: 18px;
+    
+}
+/*FORMULARIO TITULO REGISTRATE*/
+.registrate{
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial;
+    color: white;
+}
+/*FORMULARIO */
+input, textarea{
+    border: none;
+    background-color: palevioletred;
+
+}
+
+/*ENLACES*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*MENU DE NAVEGACION*/
+.lista-nav{
+    display: flex;
+    gap: 40px;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    list-style: none;
+    background-color: pink;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: palevioletred;
+    position: sticky;
+    top: 0;
+    justify-content: space-around;
+    opacity: 0.94;
+
+}
+h1{
+    font-size: 25px;
+}
+
+
+body{
+    background-color: pink;
+}
+
+
+h1,h2{
+    color: white;
+    text-align: center;
+}
+/*PIE DE PAGINA*/
+footer{
+    background-color: palevioletred;
+    margin: 20px;
+    color: white;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 0;
+    width: 80px;
+    height: 80px;
+    right: 0px;
+}
+/*PRODUCTOS*/
+.producto{
+    background-color: palevioletred;
+    width: 200px;
+    height: 300px;
+    border: solid 3px black;
+    text-align: center;
+    padding: 15px;
+}
+.producto-padre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.fondo{
+    background-image: url(../img/patron-articulos-cocina-cocinar-postres-reposteria-estilo-dibujos-animados_313437-359.avif);
+}
+
+p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.mapa{
+    display: block;
+    margin: 0 auto;
+}
+
+
+h2{
+    text-decoration: underline;
+}
+
+.galeria{
+    display: grid;
+    grid-template-areas: 
+    "foto1 foto1 foto1 foto1"
+    "foto1 foto1 foto1 foto1"
+    "foto2 foto2 foto3 foto3"
+    "foto2 foto2 foto3 foto3";
+    gap: 10px;
+    margin: 3px 0;
+
+}
+
+.foto1,.foto2,.foto3{
+    max-width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.foto1{
+    background-image: url(../img/cotillon-luminoso-invitados.webp);
+    grid-area: foto1;
+}
+.foto2{
+    background-image: url(../img/reposteria.JPG);
+    grid-area: foto2;
+}
+.foto3{
+    background-image: url(../img/descarga.jpg);
+    grid-area: foto3;
+}
+.logo-iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 20px
+}
+.iconos{
+    width: 40px;
+    height: 40px;
+}
