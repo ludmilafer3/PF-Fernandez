@@ -33,6 +33,9 @@ input, textarea{
     background-color: palevioletred;
 
 }
+img{
+    max-width: 100%;
+}
 
 /*ENLACES*/
 a{
@@ -40,41 +43,9 @@ a{
     color: white;
 }
 
-
-/*MENU DE NAVEGACION*/
-.lista-nav{
-    display: flex;
-    gap: 40px;
-}
-
-header img{
-    width: 100px;
-    height: 100px;
-}
-
-li{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    list-style: none;
-    background-color: pink;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-header{
-    display: flex;
-    align-items: center;
-    background-color: palevioletred;
-    position: sticky;
-    top: 0;
-    justify-content: space-around;
-    opacity: 0.94;
-
-}
 h1{
     font-size: 25px;
 }
-
 
 body{
     background-color: pink;
@@ -85,17 +56,7 @@ h1,h2{
     color: white;
     text-align: center;
 }
-/*PIE DE PAGINA*/
-footer{
-    background-color: palevioletred;
-    margin: 20px;
-    color: white;
-}
 
-footer img{
-    width: 50px;
-    height: 50px;
-}
 
 .whatsapp{
     position: fixed;
@@ -173,15 +134,50 @@ h2{
     background-image: url(../img/descarga.jpg);
     grid-area: foto3;
 }
+
+/*PRODUCTOS CONTENEDOR DE LAS CARDS*/
+.contenedor-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+@media(min-width: 790px){
+    .contenedor-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+}
+
+@media(min-width: 992px){
+    .contenedor-cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.contenedor-cards img{
+    height: 250px;
+}
+
+/*FOOTER*//*PIE DE PAGINA*/
+/*ICONOS*/
+.bi{
+    font-size: 2rem;
+    text-align: center;
+}
 .logo-iconos{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    padding-top: 20px
+    gap: 15px;
+
 }
-.iconos{
-    width: 40px;
-    height: 40px;
+
+footer{
+    background-color: palevioletred;
+    margin: 20px;
+    color: white;
 }

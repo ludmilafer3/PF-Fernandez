@@ -3,53 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!--ICONOS BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--CSS PROPIO-->
     <link rel="stylesheet" href="../css/styles.css">
+    <!--ICONO DE LA PAGINA-->
     <link rel="shortcut icon" href="../img/unnamed.jpg" type="image/x-icon">
     <title>COTILLON TUTTO DOLCE</title>
 </head>
 <body class="fondo">
     <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="como-llegar.html">Ubicacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="productos.html">Productos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
-        <img src="../img/istockphoto-1289805061-612x612.jpg" alt="logo del negocio">
-        <h1 id="titulo">COTILLON TUTTO DOLCE</h1>
-        <nav>
-            <ul  class="lista-nav">
-                <li><a href="../index.html">Inicio</a></li> 
-                <li><a href="como-llegar.html">Como llegar</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="productos.html">Producto</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section >
-        <div class="producto-padre">
-            <div class="producto">
-                <p>Producto 1</p>
-                <p>$8000</p>
-                <button>Agregar al carrito</button>
+    <section>
+
+        <div class="contenedor-cards">
+                <!--card 1-->
+            <div class="card text-center" style="width: 18rem;">
+                <img src="../img/card1 (1).jpg" class="card-img-top" alt="macarrons">
+                <div class="card-body">
+                <h5 class="card-title">MACARRONS</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">$1200</li>
+                <li class="list-group-item">1 unidad</li>
+                </ul>
+                <div class="card-body">
+                <a href="#" class="card-link">PEDIR</a>
+                </div>
             </div>
-            <div class="producto">
-                <p>Producto2</p>
-                <p>$3000</p>
-                <button>Agregar al carrito</button>
+
+            <!--card 2-->
+            <div class="card text-center" style="width: 18rem;">
+                <img src="../img/card2 (2).jpg" class="card-img-top" alt="postre">
+                <div class="card-body">
+                <h5 class="card-title">POSTRE</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$1800</li>
+                    <li class="list-group-item">1 unidad</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">PEDIR</a>
+                </div>
             </div>
-            <div class="producto">
-                <p>Producto3</p>
-                <p>$4000</p>
-                <button>Agregar al carrito</button>
+
+            <!--card 3-->
+            <div class="card text-center" style="width: 18rem;">
+                <img src="../img/card3 (3).jpg" class="card-img-top" alt="galleta de chocolate">
+                <div class="card-body">
+                <h5 class="card-title">GALLETA DE CHOCOLATE</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$800</li>
+                    <li class="list-group-item">1 unidad</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">PEDIR</a>
+                </div>
+            </div>
+            <!--card 4-->
+            <div class="card text-center" style="width: 18rem;">
+                <img src="../img/card4 (4).jpg" class="card-img-top" alt="cupcake">
+                <div class="card-body">
+                <h5 class="card-title">CUPCAKE</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$500</li>
+                    <li class="list-group-item">1 unidad</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">PEDIR</a>
+                </div>
+            </div>
+
+            <!--card 5-->
+            <div class="card text-center" style="width: 18rem;">
+                <img src="../img/card5 (5).jpg" class="card-img-top" alt="budin">
+                <div class="card-body">
+                <h5 class="card-title">BUDIN DE PAN</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$1800</li>
+                    <li class="list-group-item">1 unidad</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">PEDIR</a>
             </div>
         </div>
+
+
     </section>
 
+
+    <!--PIE DE PAGINA-->
     <footer >
-        <div class="logo1">
-            <img  src="../img/instagram.png" alt="logo de instagram">
-            <img  src="../img/facebook.png" alt="logo de facebook">
-            <img  src="../img/whatsapp.png" alt="logo de whatsapp">
+
+        <div class="logo-iconos">
+    
+            <a href="https://www.facebook.com/profile.php?id=100063474215667">
+                <i class="bi bi-facebook"></i>
+            </a>
+    
+            <a href="https://www.instagram.com/cotillontuttodolce/">
+                <i class="bi bi-instagram"></i>
+            </a>
+            
+            <a href="">
+                <i class="bi bi-whatsapp"></i>
+            </a>
         </div>
+    
             <p>Todos los Derechos Reservados para Cotillon Tutto Dolce</p>
-        </footer>
+    </footer>
+
+    <!---JV BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
 </body>
 </html>
