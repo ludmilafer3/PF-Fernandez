@@ -61,7 +61,6 @@ header{
 /*ENLACES*/
 a{
     text-decoration: none;
-    color: white;
 }
 
 h1{
@@ -86,30 +85,10 @@ h1,h2{
     height: 80px;
     right: 0px;
 }
-/*PRODUCTOS*/
-.producto{
-    background-color: palevioletred;
-    width: 200px;
-    height: 300px;
-    border: solid 3px black;
-    text-align: center;
-    padding: 15px;
-}
-.producto-padre{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-
-}
-
-.fondo{
-    background-image: url(../img/patron-articulos-cocina-cocinar-postres-reposteria-estilo-dibujos-animados_313437-359.avif);
-}
 
 p{
     font-size: 20px;
-    color: white;
+    
     text-align: center;
 }
 
@@ -157,18 +136,26 @@ h2{
 }
 
 /*PRODUCTOS CONTENEDOR DE LAS CARDS*/
+/*PAGINA PRODUCTOS*/
+.fondo{
+    background-image: url(../img/patron-articulos-cocina-cocinar-postres-reposteria-estilo-dibujos-animados_313437-359.avif);
+}
+
+
 .contenedor-cards{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    position: relative;
 }
+
 @media(min-width: 790px){
     .contenedor-cards{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        justify-content: center;
+        justify-items: center;
     }
 }
 
@@ -177,17 +164,46 @@ h2{
         grid-template-columns: repeat(3,1fr);
     }
 }
+@media(min-width: 1235px){
+    .contenedor-cards{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
 
-.contenedor-cards img{
+.card-img-top{
     height: 250px;
+}
+.card-title{
+    height: 10px;
+}
+.input-productos{
+    background-color: white;
+    height: 22px;
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 26px;
+    top: 351px;
+    border: solid palevioletred 1px;
+}
+.card-link{
+    color: white;
+    background-color: pink;
+    
+}
+.titulo {
+    color: palevioletred;
 }
 
 /*FOOTER*//*PIE DE PAGINA*/
 /*ICONOS*/
+
 .bi{
     font-size: 2rem;
     text-align: center;
+    color: white;
 }
+
 .logo-iconos{
     display: flex;
     flex-direction: row;
@@ -196,7 +212,6 @@ h2{
     gap: 15px;
 
 }
-
 footer{
     background-color: palevioletred;
     margin: 20px;
