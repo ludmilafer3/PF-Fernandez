@@ -21,7 +21,7 @@
 <body class="fondo">
     <header>
             <nav class="navbar navbar-expand-lg">
-                <img src="../img/card2 (2).jpg" class="logo">
+                <img src="../img/daa14fd9-ba0b-49a3-b547-9871e3117105.JPG" class="logo-header">
                 <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
                         <a class="nav-link" href="como-llegar.html">Ubicacion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active"  href="productos.html">Productos</a>
+                        <a class="nav-link"  href="productos.html">Productos</a>
                     </li>
                     </ul>
                 </div>
@@ -49,83 +49,101 @@
 
     <section>
 
-        <div class="contenedor-cards">
-            <!--card 1-->
-            <div class="card text-center" style="width: 18rem;">
-                <img src="../img/card1 (1).jpg" class="card-img-top" alt="macarrons">
-                <div class="card-body titulo">
-                <h5 class="card-title">MACARRONS</h5>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">$1200</li>
-                    <label for="numero" class="list-group-item">Cuantas Unidades?</label>
-                    <input type="number" id="numero" class="input-productos">
-                </ul>
-                <div class="card-body">
-                <a href="#" class="card-link">PEDIR</a>
-                </div>
+        <div class="filtro">
+
+            <input type="radio" name="seleccionado" id="saladas">
+            <input type="radio" name="seleccionado" id="dulces">
+            <input type="radio" name="seleccionado" id="todos">
+            
+            <div class="opciones">
+                <label for="saladas" class="pro-saladas">
+                    Productos salados</label>
+
+                <label for="dulces" class="pro-dulce">
+                    Productos dulces</label>
+
+                <label for="todos" class="pro-todos">
+                    Todos los productos</label>
             </div>
 
-            <!--card 2-->
-            <div class="card text-center" style="width: 18rem;">
-                <img src="../img/card2 (2).jpg" class="card-img-top" alt="postre">
-                <div class="card-body titulo">
-                <h5 class="card-title">POSTRE</h5>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">$1800</li>
-                    <label for="numero" class="list-group-item">Cuantas Unidades?</label>
-                    <input type="number" id="numero" class="input-productos">
-                </ul>
-                <div class="card-body">
+            <div class="contenedor-cards">
+                <!--card 1-->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../img/card1 (1).jpg" class="card-img-top" alt="macarrons">
+                    <div class="card-body">
+                    <h5 class="card-title">MACARRONS</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$1200</li>
+                        <label for="numero" class="list-group-item">Cuantas Unidades?</label>
+                        <input type="number" id="numero" class="input-productos">
+                    </ul>
+                    <div class="card-body">
                     <a href="#" class="card-link">PEDIR</a>
+                    </div>
                 </div>
-            </div>
 
-            <!--card 3-->
-            <div class="card text-center" style="width: 18rem;">
-                <img src="../img/card3 (3).jpg" class="card-img-top" alt="galleta de chocolate">
-                <div class="card-body titulo">
-                <h5 class="card-title">GALLETA DE CHOCOLATE</h5>
+                <!--card 2-->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../img/card2 (2).jpg" class="card-img-top" alt="postre">
+                    <div class="card-body">
+                    <h5 class="card-title">POSTRE</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$1800</li>
+                        <label for="numero" class="list-group-item">Cuantas Unidades?</label>
+                        <input type="number" id="numero" class="input-productos">
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">PEDIR</a>
+                    </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">$800</li>
-                    <label for="numero" class="list-group-item">Cuantas Unidades?</label>
-                    <input type="number" id="numero" class="input-productos">
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">PEDIR</a>
-                </div>
-            </div>
-            <!--card 4-->
-            <div class="card text-center" style="width: 18rem;">
-                <img src="../img/card4 (4).jpg" class="card-img-top" alt="cupcake">
-                <div class="card-body titulo">
-                <h5 class="card-title">CUPCAKE</h5>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">$500</li>
-                    <label for="numero" class="list-group-item">Cuantas Unidades?</label>
-                    <input type="number" id="numero" class="input-productos">
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">PEDIR</a>
-                </div>
-            </div>
 
-            <!--card 5-->
-            <div class="card text-center" style="width: 18rem;">
-                <img src="../img/card5 (5).jpg" class="card-img-top" alt="budin">
-                <div class="card-body titulo">
-                <h5 class="card-title">BUDIN DE PAN</h5>
+                <!--card 3-->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../img/card3 (3).jpg" class="card-img-top" alt="galleta de chocolate">
+                    <div class="card-body">
+                    <h5 class="card-title">GALLETA DE CHOCOLATE</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$800</li>
+                        <label for="numero" class="list-group-item">Cuantas Unidades?</label>
+                        <input type="number" id="numero" class="input-productos">
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">PEDIR</a>
+                    </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">$1800</li>
-                    <label for="numero" class="list-group-item">Cuantas Unidades?</label>
-                    <input type="number" id="numero" class="input-productos">
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">PEDIR</a>
+                <!--card 4-->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../img/card4 (4).jpg" class="card-img-top" alt="cupcake">
+                    <div class="card-body">
+                    <h5 class="card-title">CUPCAKE</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$500</li>
+                        <label for="numero" class="list-group-item">Cuantas Unidades?</label>
+                        <input type="number" id="numero" class="input-productos">
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">PEDIR</a>
+                    </div>
+                </div>
+
+                <!--card 5-->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../img/card5 (5).jpg" class="card-img-top" alt="budin">
+                    <div class="card-body">
+                    <h5 class="card-title">BUDIN DE PAN</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$1800</li>
+                        <label for="numero" class="list-group-item">Cuantas Unidades?</label>
+                        <input type="number" id="numero" class="input-productos">
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">PEDIR</a>
+                    </div>
                 </div>
             </div>
         </div>

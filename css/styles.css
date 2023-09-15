@@ -33,15 +33,17 @@ input, textarea{
     background-color: palevioletred;
 
 }
-.logo{
-    width: 120px;
-    height: 120px;
-    margin: 0 25px;
-}
+
 img{
     max-width: 100%;
 }
 /*HEADER*/
+.logo-header{
+    width: 110px;
+    height: 110px;
+    margin: 0 25px;
+    border-radius: 60px
+}
 
 header{
     background-color: palevioletred;
@@ -57,6 +59,20 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+/*PSEUDOCLASES EN EL NAV*/
+.nav-link:hover, 
+.navbar-brand:hover{
+    color: palevioletred;
+    background-color: pink;
+    border-radius: 20px;
+}
+.nav-link:active, 
+.navbar-brand:active{
+    background-color: palevioletred;
+    color: pink;
+}
+
+
 
 /*ENLACES*/
 a{
@@ -135,13 +151,14 @@ h2{
     grid-area: foto3;
 }
 
-/*PRODUCTOS CONTENEDOR DE LAS CARDS*/
+
 /*PAGINA PRODUCTOS*/
+/*FONDO EN LA PAGINA DE PRODUCTOS*/
 .fondo{
     background-image: url(../img/patron-articulos-cocina-cocinar-postres-reposteria-estilo-dibujos-animados_313437-359.avif);
 }
 
-
+/*PRODUCTOS CONTENEDOR DE LAS CARDS*/
 .contenedor-cards{
     display: flex;
     flex-direction: column;
@@ -150,32 +167,37 @@ h2{
     gap: 15px;
     position: relative;
 }
-
-@media(min-width: 790px){
+/*MEDIA PARA TABLES*/
+@media(min-width: 768px){
     .contenedor-cards{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
     }
 }
-
-@media(min-width: 992px){
+/*MEDIA PARA TABLES MAS GRANDE*/
+@media(min-width: 1024px){
     .contenedor-cards{
         grid-template-columns: repeat(3,1fr);
     }
 }
-@media(min-width: 1235px){
+/*MEDIA PARA MONITORES*/
+@media(min-width: 1440px){
     .contenedor-cards{
         grid-template-columns: repeat(4,1fr);
     }
 }
-
 .card-img-top{
     height: 250px;
 }
+/*NOMBRES DE LOS PRODUCTOS*/
 .card-title{
     height: 10px;
+    color: palevioletred;
+    
 }
+
+/*CUANTAS UNIDADES?*/
 .input-productos{
     background-color: white;
     height: 22px;
@@ -186,14 +208,36 @@ h2{
     top: 351px;
     border: solid palevioletred 1px;
 }
+/*PEDIR*/
 .card-link{
-    color: white;
-    background-color: pink;
-    
-}
-.titulo {
     color: palevioletred;
+    background-color: pink;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
 }
+/*FILTROS*/
+.opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+@media(min-width: 768px){
+    .opciones{
+        flex-direction: row;
+    }
+}
+.opciones label{
+    background-color: palevioletred;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
 
 /*FOOTER*//*PIE DE PAGINA*/
 /*ICONOS*/
