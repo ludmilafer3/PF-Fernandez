@@ -1,64 +1,86 @@
-/*FORMULARIO*/
-form div label,.genero{
-    color: white;
-    margin-right: 15px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-form{
-    border: dotted 5px palevioletred;
-    height: 550px;
-    width: 450px;
+/*FORMUARIO*/
+/*PAGINA CONTACTO*/
+.contenedor-formulario{
+    background-color: palevioletred;
     padding: 20px;
-    margin: auto;
+    margin: 10px
+}
+@media(min-width: 768px){
+    .contenedor-formulario{
+        margin: 0 100px;
+        
+    }    
+}
+@media(min-width: 1024px){
+    .contenedor-formulario{
+    margin: 0 150px;
+    }
+}
+@media(min-width: 1440px){
+    .contenedor-formulario{
+    margin: 0 300px;
+    }
 }
 
-/*FORMULARIO CENTRO LOS ELEMENTOS*/
-.formulario{
-    text-align: center;
-    margin-bottom: 18px;
+.contenedor-formulario label, .genero{
+    color: white;
+    font-size: 18px;
     
 }
-/*FORMULARIO TITULO REGISTRATE*/
 .registrate{
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     font-family: Arial;
     color: white;
+    margin: 15px;
 }
-/*FORMULARIO */
-input, textarea{
-    border: none;
-    background-color: palevioletred;
 
+.logo-whatsapp{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
 }
+/*termina la pagina de contacto*/
+
 
 img{
     max-width: 100%;
 }
+
 /*HEADER*/
 .logo-header{
-    width: 110px;
-    height: 110px;
-    margin: 0 25px;
-    border-radius: 60px
+    display: none;
+}
+
+@media(min-width: 998px){
+    .logo-header{
+        display: block;
+        width: 110px;
+        height: 110px;
+        margin: 0 25px;
+        border-radius: 60px
+    }
 }
 
 header{
     background-color: palevioletred;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
+
 .navbar-brand{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+
 .nav-link {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+
 /*PSEUDOCLASES EN EL NAV*/
 .nav-link:hover, 
 .navbar-brand:hover{
@@ -71,7 +93,7 @@ header{
     background-color: palevioletred;
     color: pink;
 }
-
+/*termina el header*/
 
 
 /*ENLACES*/
@@ -93,63 +115,81 @@ h1,h2{
     text-align: center;
 }
 
-
-.whatsapp{
-    position: fixed;
-    bottom: 0;
-    width: 80px;
-    height: 80px;
-    right: 0px;
-}
-
 p{
     font-size: 20px;
-    
     text-align: center;
 }
-
-.mapa{
-    display: block;
-    margin: 0 auto;
-}
-
-
 h2{
     text-decoration: underline;
 }
+/*PAGINA UBICACION*/
+/*IFRAME*/
+.mapa{
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+@media(min-width: 768px){
+    .mapa{
+        width: 600px;
+        height: 400px;
+    }
+}
+@media(min-width: 1024px){
+    .mapa{
+        width: 800px;
+        height: 500px;
+    }
+}
+.ubicacion{
+    color: white;
+}
 
-.galeria{
+
+
+/*PAGINA DE INICIO*/
+.logo-inicio{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+.carousel-item img{
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.grilla{
     display: grid;
     grid-template-areas: 
-    "foto1 foto1 foto1 foto1"
-    "foto1 foto1 foto1 foto1"
-    "foto2 foto2 foto3 foto3"
-    "foto2 foto2 foto3 foto3";
-    gap: 10px;
-    margin: 3px 0;
-
+    "foto1 foto2 foto3"
+    "foto1 foto2 foto3";
+    gap: 5px;
+    margin-top: 10px;
 }
 
 .foto1,.foto2,.foto3{
-    max-width: 100%;
-    height: 300px;
+    width: 100%;
+    height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .foto1{
-    background-image: url(../img/cotillon-luminoso-invitados.webp);
+    background-image: url(../img/reposteria.JPG);
     grid-area: foto1;
 }
 .foto2{
-    background-image: url(../img/reposteria.JPG);
+    background-image: url(../img/descarga.jpg);
     grid-area: foto2;
 }
 .foto3{
-    background-image: url(../img/descarga.jpg);
+    background-image: url(../img/cotillon-luminoso-invitados.webp);
     grid-area: foto3;
 }
+/*termina pagina de inicio*/
 
 
 /*PAGINA PRODUCTOS*/
@@ -217,31 +257,75 @@ h2{
     border-radius: 10px;
 }
 /*FILTROS*/
+/*LABEL*/
 .opciones{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    margin-bottom: 40px;
 }
 @media(min-width: 768px){
     .opciones{
         flex-direction: row;
     }
 }
+/*BORRO LOS INPUTS*/
+#saladas, #dulces, #todos{
+    display: none;
+}
+.saladas, .dulces{
+    display: none;
+}
+
+#saladas:checked ~ .contenedor-cards .saladas{
+    display: flex;
+}
+#dulces:checked ~ .contenedor-cards .dulces{
+    display: flex;
+}
+
+#todos:checked  ~ .contenedor-cards .dulces,
+#todos:checked ~ .contenedor-cards .saladas{
+    display: flex;
+}
+
 .opciones label{
     background-color: palevioletred;
     color: white;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
-    margin-bottom: 15px;
+    cursor: pointer;
+    border: solid 1px pink;
 }
 
+#saladas:checked ~ .opciones .pro-saladas{
+    background-color: pink;
+    color: palevioletred;
+    border: solid palevioletred 2px;
+}
+#dulces:checked ~ .opciones .pro-dulce{
+    background-color: pink;
+    color: palevioletred;
+    border: solid palevioletred 2px;
+}
+#todos:checked ~ .opciones .pro-todos{
+    background-color: pink;
+    color: palevioletred;
+    border: solid palevioletred 2px;
+}
+
+.opciones label:hover{
+    background-color: pink;
+    color: palevioletred;
+    border: solid palevioletred 2px;
+
+}
+/*termina la pagina de productos*/
 
 /*FOOTER*//*PIE DE PAGINA*/
 /*ICONOS*/
-
 .bi{
     font-size: 2rem;
     text-align: center;
@@ -261,3 +345,4 @@ footer{
     margin: 20px;
     color: white;
 }
+/*termina el footer*/

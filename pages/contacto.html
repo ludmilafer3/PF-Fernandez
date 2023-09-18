@@ -11,117 +11,135 @@
     <!--CSS PROPIO-->
     <link rel="stylesheet" href="../css/styles.css">
     <!--ICONO DE LA PAGINA-->
-    <link rel="shortcut icon" href="../img/unnamed.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <title>COTILLON TUTTO DOLCE</title>
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg">
-          <img src="../img/daa14fd9-ba0b-49a3-b547-9871e3117105.JPG" class="logo-header">
-          <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">Inicio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-              <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="galeria.html">Galeria</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="como-llegar.html">Ubicacion</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link"  href="productos.html">Productos</a>
-              </li>
-              </ul>
-          </div>
-          </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg">
+            <img src="../img/daa14fd9-ba0b-49a3-b547-9871e3117105.JPG" class="logo-header">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quienes-somos.html">¿Quienes somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="como-llegar.html">Ubicacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="productos.html">Productos</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </header>
 
     <section>
-        <h2>Formulario</h2>
-        
-        <form>
-            <p class="registrate">REGISTRATE:</p>
-            <div class="formulario">
-                <label for="nombre"> NOMBRE Y APELLIDO: </label>
-                <input type="text" id="nombre">
-            </div>
+        <form >
+            <div class="contenedor-formulario">
+                <p class="registrate">REGISTRATE</p>
 
-            <div class="formulario" >
-                <label for="dni">NUMERO DE DNI:</label>
-                <input type="number" id="dni">
-            </div>
-            <div  class="formulario" >
-                <label for="contraseña">CONTRASEÑA:</label>
-                <input type="password" id="contraseña">
-            </div>
-            <div  class="formulario" >
-                <label for="email">EMAIL:</label>
-                <input type="text" id="email">
-            </div>
-            <div  class="formulario" >
-                <label for="numero">TELEFONO:</label>
-                <input type="tel" id="numero">
-            </div>
-            <div class="formulario" >
-                <p class="genero">GENERO:</p>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label"> NOMBRE Y APELLIDO: </label>
+                    <input type="text" id="nombre" class="form-control" placeholder="nombre y apellido">
+                </div>
+
+                <div class="mb-3" >
+                    <label for="dni" class="form-label">NUMERO DE DNI:</label>
+                    <input type="number" class="form-control" placeholder="dni" id="dni">
+                </div>
+
+                <div class="mb-3"> 
+                    <label for="numero" class="form-label"> NUMERO DE TELEFONO:</label>
+                    <input type="number" class="form-control"  id="numero" placeholder="telefono">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">EMAIL:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+
+                <div  class="mb-3">
+                    <label for="contraseña" class="form-label">CONTRASEÑA:</label>
+                    <input type="password" class="form-control" id="contraseña" placeholder="contraseña">
+                    <div id="passwordHelpBlock" class="form-text">
+                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                    </div>
+                </div>
+
+                <div class="mb-3 text-center " >
+                    <p class="genero">GENERO:</p>
+                    
+                    <label for="masculino" class=" form-label">Masculino</label>
+                    <input type="radio"  id="masculino" name="genero"  >
+
+                    <label for="femenino" class="form-label">Femenino</label>
+                    <input type="radio" name="genero"   id="femenino">
+
+                    <label for="no bi" class="form-label">No binario</label>
+                    <input type="radio" name="genero"   id="no bi">
+
+                </div>
+
+                <!--SIEMPRE DENTRO DE UN SELECT VA UN OPTION-->
+                <div  class="mb-3 text-center" > 
+                    <label for="opciones">PAIS:</label>
+                    <select  id="opciones">
+                        <option disabled>-Selecciona una opcion</option>
+                        <option >Argentina</option>
+                        <option >Colombia</option>
+                        <option >Chile</option>
+                        <option >Ecuador</option>
+                        <option >Brasil</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">COMENTARIO:</label>
+                    <textarea class="form-control" placeholder="escribe un comentario" id="exampleFormControlTextarea1" rows="2"></textarea>
+                </div>
+
                 
-                <label for="masculino">Masculino</label>
-                <input type="radio"  id="masculino" name="genero"  >
 
-                <label for="femenino">Femenino</label>
-                <input type="radio" name="genero"   id="femenino">
-
-                <label for="no bi">No binario</label>
-                <input type="radio" name="genero"   id="no bi">
-
+                <div  class="mb-3 mt-5 text-center" >
+                    <input type="submit" value="Enviar Formulario">
+                    <input type="reset" value="Limpiar Formulario">
+                </div>
             </div>
-            <!--SIEMPRE DENTRO DE UN SELECT VA UN OPTION-->
-            <div  class="formulario" > 
-                <label for="opciones">PAIS:</label>
-                <select  id="opciones">
-                    <option disabled>-Selecciona una opcion</option>
-                    <option >Argentina</option>
-                    <option >Colombia</option>
-                    <option >Chile</option>
-                    <option >Ecuador</option>
-                    <option >Brasil</option>
-                </select>
-            </div>
-            <div  class="formulario" >
-                <input type="submit" value="Enviar Formulario">
-                <input type="reset" value="Limpiar Formulario">
-            </div>
-            
         </form>
     </section>
-    
+    <div class="logo-whatsapp">
+        <img src="../img/whatsapp.png" alt="logo de whatsapp">
+    </div>
+
+
     <!--PIE DE PAGINA-->
     <footer >
 
-      <div class="logo-iconos">
-  
-          <a href="https://www.facebook.com/profile.php?id=100063474215667">
-              <i class="bi bi-facebook"></i>
-          </a>
-  
-          <a href="https://www.instagram.com/cotillontuttodolce/">
-              <i class="bi bi-instagram"></i>
-          </a>
-          
-          <a href="">
-              <i class="bi bi-whatsapp"></i>
-          </a>
-      </div>
-  
-          <p>Todos los Derechos Reservados para Cotillon Tutto Dolce</p>
-  </footer>
+        <div class="logo-iconos">  
+            <a href="https://www.facebook.com/profile.php?id=100063474215667">
+                <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/cotillontuttodolce/">
+                <i class="bi bi-instagram"></i>
+            </a>
+    
+            <a href="">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </div>
+        <p>Todos los Derechos Reservados para Cotillon Tutto Dolce</p>
+    </footer>
 
 
     <!---JV BOOTSTRAP-->
