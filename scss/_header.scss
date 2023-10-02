@@ -1,0 +1,40 @@
+
+/*HEADER*/
+.logo-header{
+    display: none;
+}
+
+@media(min-width: 998px){
+    .logo-header{
+        display: block;
+        width: 110px;
+        height: 110px;
+        margin: 0 25px;
+        border-radius: 60px
+    }
+}
+
+header{
+    background-color: palevioletred;
+    margin-bottom: 20px;
+} 
+
+.navbar-brand, .nav-link{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    &:hover{
+        color: palevioletred;
+        background-color: pink;
+        border-radius: 20px;
+    }
+
+    &:active{
+        background-color: palevioletred;
+        color: pink;
+    }
+}
+
+
+

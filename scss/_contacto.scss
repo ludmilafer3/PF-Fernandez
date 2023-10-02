@@ -3,7 +3,9 @@
 .contenedor-formulario{
     background-color: palevioletred;
     padding: 20px;
-    margin: 10px
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
   }
   @media(min-width: 768px){
     .contenedor-formulario{
@@ -21,7 +23,31 @@
     margin: 0 300px;
     }
   }
-  
+  .form-label:hover{
+    color: pink;
+  }
+
+  .submit{
+    background-color: pink;
+    color: palevioletred;
+    border: pink 2px solid;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+  } 
+
+  .submit:hover{
+    background-color: palevioletred;
+    color: pink;
+  }
+
+  .submit:active{
+    background-color: palevioletred;
+    color: white;
+  }
+
+
   .contenedor-formulario label, .genero{
     color: white;
     font-size: 18px;
@@ -33,6 +59,7 @@
     font-family: Arial;
     color: white;
     margin: 15px;
+    text-decoration: underline;
   }
   
   .logo-whatsapp{
@@ -42,4 +69,22 @@
     bottom: 30px;
     right: 30px;
   }
+
+  .padre-logo{
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+
+  .logo-cotillon{
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+  }
+
+
+
   /*termina la pagina de contacto*/

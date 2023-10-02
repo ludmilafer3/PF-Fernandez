@@ -36,12 +36,18 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"  href="productos.html">Productos</a>
-                </li>
+                </li>s
                 </ul>
             </div>
             </div>
         </nav>
     </header>
+
+    <section>
+        <div class="padre-logo"> 
+            <img class="logo-cotillon" src="../img/daa14fd9-ba0b-49a3-b547-9871e3117105.JPG" alt="logo del cotillon">
+        </div>
+    </section>
 
     <section>
         <form >
@@ -76,16 +82,17 @@
                     </div>
                 </div>
 
-                <div class="mb-3 text-center " >
-                    <p class="genero">GENERO:</p>
-                    
-                    <label for="masculino" class=" form-label">Masculino</label>
+                <div class="mb-3 text-center opcion-padre" >
+    
+                <p class="genero">GENERO:</p>
+        
+                    <label for="masculino" class="opcion form-label">Masculino</label>
                     <input type="radio"  id="masculino" name="genero"  >
-
-                    <label for="femenino" class="form-label">Femenino</label>
+                
+                    <label for="femenino" class="opcion form-label">Femenino</label>
                     <input type="radio" name="genero"   id="femenino">
-
-                    <label for="no bi" class="form-label">No binario</label>
+                
+                    <label for="no bi" class="opcion form-label">No binario</label>
                     <input type="radio" name="genero"   id="no bi">
 
                 </div>
@@ -111,8 +118,8 @@
                 
 
                 <div  class="mb-3 mt-5 text-center" >
-                    <input type="submit" value="Enviar Formulario">
-                    <input type="reset" value="Limpiar Formulario">
+                    <input type="submit"class="submit" value="Enviar Formulario">
+                    <input type="reset" class="submit" value="Limpiar Formulario">
                 </div>
             </div>
         </form>
@@ -123,24 +130,45 @@
 
 
     <!--PIE DE PAGINA-->
-    <footer >
+    <footer>
+        <div class="padre-iconos">
 
-        <div class="logo-iconos">  
-            <a href="https://www.facebook.com/profile.php?id=100063474215667">
-                <i class="bi bi-facebook"></i>
-            </a>
+            <div class="logo-iconos">
+                <div>
+                    <h3>Redes</h3>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/profile.php?id=100063474215667"  target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+            
+                    <a href="https://www.instagram.com/cotillontuttodolce/"  target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                        
+                    <a href=""  target="_blank">
+                        <i class="bi bi-whatsapp" ></i>
+                    </a>
+                </div>
+            </div>
 
-            <a href="https://www.instagram.com/cotillontuttodolce/">
-                <i class="bi bi-instagram"></i>
-            </a>
-    
-            <a href="">
-                <i class="bi bi-whatsapp"></i>
-            </a>
+            <div class="medio-pagos">
+                <div>
+                    <h3>Medios de Pago</h3>
+                </div>
+
+                <div class="pagos-imagenes">
+                    <img src="../img/mercadopago-credit-card-logo-bis.webp" alt="mercado pago">
+                    
+                </div>
+
+                
+            </div>
+
         </div>
-        <p>Todos los Derechos Reservados para Cotillon Tutto Dolce</p>
-    </footer>
 
+        <!--<p>Todos los Derechos Reservados para Cotillon Tutto Dolce</p>-->
+    </footer>
 
     <!---JV BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

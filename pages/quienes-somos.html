@@ -44,8 +44,8 @@
     </header>
 
     <section>
-        <h2>¿Quienes somos?</h2>
-        <div descripcion-padre>
+        <h2>¿QUIENES SOMOS?</h2>
+        <div class="descripcion-padre">
             <div class="descripcion">
                 <img src="../img/globo.png" alt="globos">
                 <p>Somos una empresa familiar de venta minoritas, dedicada a la venta de artículos de cotillón, carnaval carioca, 
@@ -53,11 +53,13 @@
                 </p>
             </div>
             <div class="descripcion ">
-                <img src="../img/icono-fiesta.png" alt="emoji-fiesta">
-                <p>Contamos con un gran surtido de productos nacionales e importados con el objetivo de satisfacer todas sus necesidades, manteniendo siempre las nuevas tendencias del mercado permitiendo una innovación constante del rubro</p>
+                <img src="../img/icono-fiesta.png" alt="emoji fiesta">
+                <p>Contamos con un gran surtido de productos nacionales 
+                e importados con el objetivo de satisfacer todas sus necesidades, manteniendo siempre las nuevas tendencias del mercado 
+                permitiendo una innovación constante del rubro.</p>
             </div>
             <div class="descripcion">
-                <img src="../img/emoji-cara-fiesta.jpg" alt="emoji-cara-fiesta">
+                <img src="../img/emoji-cara-fiesta.jpg" alt="emoji cara fiesta">
                 <p>Disponemos de un amplio Showroom, dentro del cual encontrará profesionales capacitados para asesorarlo y ofrecerle la mejor atención 
                 buscando soluciones rápidas y eficientes. Nos esforzamos cada día para brindarle 
                 la mayor variedad de productos al mejor precio del mercado conservando la experiencia que nos caracteriza.</p>
@@ -65,7 +67,44 @@
         </div>
     </section>
 
-    
+    <section>
+        <h2 class="text-preguntas">PREGUNTAS FRECUENTES:</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Donde encontrarnos?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">General Daniel Cerri, Gurruchaga 150. A 15 kilometros
+                    de Bahia Blanca.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Horarios de atención?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Abierto de Lunes a Viernes de 10 a 12.30 y de 17 a 20.30. 
+                        Sabado de 10 a 13 y 17 a 20.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Formas de pago?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Ofrecemos mercado pago, tarjetas de credito y debito, efectivo y cuenta DNI.</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--PIE DE PAGINA-->
     <footer>
@@ -76,27 +115,36 @@
                     <h3>Redes</h3>
                 </div>
                 <div>
-                    <a href="https://www.facebook.com/profile.php?id=100063474215667">
+                    <a href="https://www.facebook.com/profile.php?id=100063474215667"  target="_blank">
                         <i class="bi bi-facebook"></i>
                     </a>
             
-                    <a href="https://www.instagram.com/cotillontuttodolce/">
+                    <a href="https://www.instagram.com/cotillontuttodolce/"  target="_blank">
                         <i class="bi bi-instagram"></i>
                     </a>
                         
-                    <a href="">
+                    <a href=""  target="_blank">
                         <i class="bi bi-whatsapp"></i>
                     </a>
                 </div>
             </div>
 
-            <div>
-                <h3>Medios de Pago</h3>
+            <div class="medio-pagos">
+                <div>
+                    <h3>Medios de Pago</h3>
+                </div>
+
+                <div class="pagos-imagenes">
+                    <img src="../img/mercadopago-credit-card-logo-bis.webp" alt="mercado pago">
+                    
+                </div>
+
+                
             </div>
 
         </div>
 
-        <p>Todos los Derechos Reservados para Cotillon Tutto Dolce</p>
+        <!--<p>Todos los Derechos Reservados para Cotillon Tutto Dolce</p>-->
     </footer>
 
     <!---JV BOOTSTRAP-->

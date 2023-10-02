@@ -1,4 +1,9 @@
   /*PAGINA QUIENES SOMOS?*/
+  .descripcion-padre{
+    display: flex;
+    flex-direction: column;    
+  }
+  
   .descripcion{
     display: flex;
     flex-direction: row;
@@ -6,11 +11,37 @@
     align-items: center;
     gap: 10px;
     background-color: white;
-    margin: 10px 10px;
-    padding: 5px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    p{
+      width: 85%;
+    }
+
+    img{
+      width: 100px;
+      height: 100px;
+    }
+    
+    &:nth-child(even){
+      flex-direction: row-reverse;
+      
+    }
+
+    
+  @media(min-width: 1024px){
+    img{
+      width: 150px;
+      height: 150px;
+    }
   }
+  }
+
   
-  .descripcion img{
-    width: 100px;
-    height: 100px;
+  /*ACORDION*/
+  .accordion{
+    margin: 10px ;
+
   }
