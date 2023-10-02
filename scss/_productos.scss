@@ -1,0 +1,132 @@
+ 
+  /*PAGINA PRODUCTOS*/
+  /*FONDO EN LA PAGINA DE PRODUCTOS*/
+  .fondo{
+    background-image: url(../img/patron-articulos-cocina-cocinar-postres-reposteria-estilo-dibujos-animados_313437-359.avif);
+  }
+  
+  /*PRODUCTOS CONTENEDOR DE LAS CARDS*/
+  .contenedor-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+  }
+  /*MEDIA PARA TABLES*/
+  @media(min-width: 768px){
+    .contenedor-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+  }
+  /*MEDIA PARA TABLES MAS GRANDE*/
+  @media(min-width: 1024px){
+    .contenedor-cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+  }
+  /*MEDIA PARA MONITORES*/
+  @media(min-width: 1440px){
+    .contenedor-cards{
+        grid-template-columns: repeat(4,1fr);
+    }
+  }
+  .card-img-top{
+    height: 250px;
+  }
+  /*NOMBRES DE LOS PRODUCTOS*/
+  .card-title{
+    height: 10px;
+    color: palevioletred;
+    
+  }
+  
+  /*CUANTAS UNIDADES?*/
+  .input-productos{
+    background-color: white;
+    height: 22px;
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 26px;
+    top: 351px;
+    border: solid palevioletred 1px;
+  }
+  /*PEDIR*/
+  .card-link{
+    color: palevioletred;
+    background-color: pink;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  /*FILTROS*/
+  /*LABEL*/
+  .opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  @media(min-width: 768px){
+    .opciones{
+        flex-direction: row;
+    }
+  }
+  /*BORRO LOS INPUTS*/
+  #saladas, #dulces, #todos{
+    display: none;
+  }
+  .saladas, .dulces{
+    display: none;
+  }
+  
+  #saladas:checked ~ .contenedor-cards .saladas{
+    display: flex;
+  }
+  #dulces:checked ~ .contenedor-cards .dulces{
+    display: flex;
+  }
+  
+  #todos:checked  ~ .contenedor-cards .dulces,
+  #todos:checked ~ .contenedor-cards .saladas{
+    display: flex;
+  }
+  
+  .opciones label{
+    background-color: palevioletred;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border: solid 1px pink;
+  }
+  
+  #saladas:checked ~ .opciones .pro-saladas{
+    background-color: pink;
+    color: palevioletred;
+    border: solid palevioletred 2px;
+  }
+  #dulces:checked ~ .opciones .pro-dulce{
+    background-color: pink;
+    color: palevioletred;
+    border: solid palevioletred 2px;
+  }
+  #todos:checked ~ .opciones .pro-todos{
+    background-color: pink;
+    color: palevioletred;
+    border: solid palevioletred 2px;
+  }
+  
+  .opciones label:hover{
+    background-color: pink;
+    color: palevioletred;
+    border: solid palevioletred 2px;
+  
+  }
+  /*termina la pagina de productos*/

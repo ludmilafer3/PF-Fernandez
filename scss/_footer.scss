@@ -1,0 +1,33 @@
+/*FOOTER*//*PIE DE PAGINA*/
+/*ICONOS*/
+
+.bi{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    margin: 5px;
+}
+
+.logo-iconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+footer{
+    background-color: palevioletred;
+    color: white;  
+    margin: 0px;
+    margin-top: 20px;
+    
+}
+.padre-iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+/*termina el footer*/

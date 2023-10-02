@@ -1,0 +1,16 @@
+  /*PAGINA QUIENES SOMOS?*/
+  .descripcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    margin: 10px 10px;
+    padding: 5px;
+  }
+  
+  .descripcion img{
+    width: 100px;
+    height: 100px;
+  }

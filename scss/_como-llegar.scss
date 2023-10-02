@@ -1,0 +1,24 @@
+/*PAGINA UBICACION*/
+  /*IFRAME*/
+  .mapa{
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  @media(min-width: 768px){
+    .mapa{
+        width: 600px;
+        height: 400px;
+    }
+  }
+  @media(min-width: 1024px){
+    .mapa{
+        width: 800px;
+        height: 500px;
+    }
+  }
+  .ubicacion{
+    color: white;
+  }
+  
+  
