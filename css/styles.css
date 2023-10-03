@@ -26,7 +26,11 @@ p {
 }
 
 h2 {
+  transition: all 0.5s;
+}
+h2:hover {
   text-decoration: underline;
+  color: palevioletred;
 }
 
 /*PAGINA DE INICIO*/
@@ -89,8 +93,6 @@ h2 {
   gap: 15px;
   position: relative;
 }
-
-/*MEDIA PARA TABLES*/
 @media (min-width: 768px) {
   .contenedor-cards {
     display: grid;
@@ -98,18 +100,17 @@ h2 {
     justify-items: center;
   }
 }
-/*MEDIA PARA TABLES MAS GRANDE*/
 @media (min-width: 1024px) {
   .contenedor-cards {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/*MEDIA PARA MONITORES*/
 @media (min-width: 1440px) {
   .contenedor-cards {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 .card-img-top {
   height: 250px;
 }
@@ -141,6 +142,13 @@ h2 {
   border-radius: 10px;
 }
 
+.card {
+  transition: all 1.3s;
+}
+.card:hover {
+  transform: scale(1.04);
+}
+
 /*FILTROS*/
 /*LABEL*/
 .opciones {
@@ -151,12 +159,25 @@ h2 {
   gap: 15px;
   margin-bottom: 40px;
 }
-
+.opciones label {
+  background-color: palevioletred;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+  border: solid 1px pink;
+}
+.opciones label:hover {
+  background-color: pink;
+  color: palevioletred;
+  border: solid palevioletred 2px;
+}
 @media (min-width: 768px) {
   .opciones {
     flex-direction: row;
   }
 }
+
 /*BORRO LOS INPUTS*/
 #saladas, #dulces, #todos {
   display: none;
@@ -179,15 +200,6 @@ h2 {
   display: flex;
 }
 
-.opciones label {
-  background-color: palevioletred;
-  color: white;
-  font-size: 20px;
-  padding: 5px;
-  cursor: pointer;
-  border: solid 1px pink;
-}
-
 #saladas:checked ~ .opciones .pro-saladas {
   background-color: pink;
   color: palevioletred;
@@ -201,12 +213,6 @@ h2 {
 }
 
 #todos:checked ~ .opciones .pro-todos {
-  background-color: pink;
-  color: palevioletred;
-  border: solid palevioletred 2px;
-}
-
-.opciones label:hover {
   background-color: pink;
   color: palevioletred;
   border: solid palevioletred 2px;
@@ -230,6 +236,10 @@ h2 {
   padding: 10px;
   border-radius: 5px;
   overflow: hidden;
+  transition: all 1.4s;
+}
+.descripcion:hover {
+  transform: scale(1.02);
 }
 .descripcion p {
   width: 85%;
@@ -262,7 +272,6 @@ h2 {
   border-radius: 5px;
   overflow: hidden;
 }
-
 @media (min-width: 768px) {
   .contenedor-formulario {
     margin: 0 100px;
@@ -278,6 +287,7 @@ h2 {
     margin: 0 300px;
   }
 }
+
 .form-label:hover {
   color: pink;
 }
@@ -291,12 +301,10 @@ h2 {
   font-size: 20px;
   font-weight: 500;
 }
-
 .submit:hover {
   background-color: palevioletred;
   color: pink;
 }
-
 .submit:active {
   background-color: palevioletred;
   color: white;
@@ -346,7 +354,6 @@ h2 {
   margin: 0 auto;
   padding: 20px;
 }
-
 @media (min-width: 768px) {
   .mapa {
     width: 600px;
@@ -359,6 +366,7 @@ h2 {
     height: 500px;
   }
 }
+
 .ubicacion {
   color: white;
 }
@@ -384,7 +392,6 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 50px;
   padding: 10px;
 }
 
@@ -413,8 +420,7 @@ footer {
 .logo-header {
   display: none;
 }
-
-@media (min-width: 998px) {
+@media (min-width: 992px) {
   .logo-header {
     display: block;
     width: 110px;
@@ -423,6 +429,7 @@ footer {
     border-radius: 60px;
   }
 }
+
 header {
   background-color: palevioletred;
   margin-bottom: 20px;

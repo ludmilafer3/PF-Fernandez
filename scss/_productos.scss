@@ -1,4 +1,4 @@
- 
+
   /*PAGINA PRODUCTOS*/
   /*FONDO EN LA PAGINA DE PRODUCTOS*/
   .fondo{
@@ -13,27 +13,29 @@
     align-items: center;
     gap: 15px;
     position: relative;
-  }
-  /*MEDIA PARA TABLES*/
-  @media(min-width: 768px){
-    .contenedor-cards{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        justify-items: center;
+
+    @media(min-width: 768px){
+    
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-items: center;
+  
+    }
+    
+    @media(min-width: 1024px){
+    
+      grid-template-columns: repeat(3,1fr);
+
+    }
+
+    @media(min-width: 1440px){
+    
+      grid-template-columns: repeat(4,1fr);
+  
     }
   }
-  /*MEDIA PARA TABLES MAS GRANDE*/
-  @media(min-width: 1024px){
-    .contenedor-cards{
-        grid-template-columns: repeat(3,1fr);
-    }
-  }
-  /*MEDIA PARA MONITORES*/
-  @media(min-width: 1440px){
-    .contenedor-cards{
-        grid-template-columns: repeat(4,1fr);
-    }
-  }
+
+
   .card-img-top{
     height: 250px;
   }
@@ -63,6 +65,16 @@
     padding: 5px;
     border-radius: 10px;
   }
+
+.card{
+    transition: all 1.3s;    
+
+    &:hover{
+      transform: scale(1.04);
+    }
+  }
+
+
   /*FILTROS*/
   /*LABEL*/
   .opciones{
@@ -72,12 +84,30 @@
     align-items: center;
     gap: 15px;
     margin-bottom: 40px;
-  }
-  @media(min-width: 768px){
-    .opciones{
-        flex-direction: row;
+
+    label{
+      background-color: palevioletred;
+      color: white;
+      font-size: 20px;
+      padding: 5px;
+      cursor: pointer;
+      border: solid 1px pink;
+
+      &:hover{
+        background-color: pink;
+        color: palevioletred;
+        border: solid palevioletred 2px;
+      
+      }
     }
+
+    @media(min-width: 768px){
+          flex-direction: row;
+    }
+
+
   }
+  
   /*BORRO LOS INPUTS*/
   #saladas, #dulces, #todos{
     display: none;
@@ -97,36 +127,22 @@
   #todos:checked ~ .contenedor-cards .saladas{
     display: flex;
   }
-  
-  .opciones label{
-    background-color: palevioletred;
-    color: white;
-    font-size: 20px;
-    padding: 5px;
-    cursor: pointer;
-    border: solid 1px pink;
+
+  @mixin fondo-opcion {
+    background-color: pink;
+    color: palevioletred;
+    border: solid palevioletred 2px;
   }
   
   #saladas:checked ~ .opciones .pro-saladas{
-    background-color: pink;
-    color: palevioletred;
-    border: solid palevioletred 2px;
+    @include fondo-opcion();
   }
   #dulces:checked ~ .opciones .pro-dulce{
-    background-color: pink;
-    color: palevioletred;
-    border: solid palevioletred 2px;
+    @include fondo-opcion();
   }
   #todos:checked ~ .opciones .pro-todos{
-    background-color: pink;
-    color: palevioletred;
-    border: solid palevioletred 2px;
+    @include fondo-opcion();
   }
   
-  .opciones label:hover{
-    background-color: pink;
-    color: palevioletred;
-    border: solid palevioletred 2px;
-  
-  }
+
   /*termina la pagina de productos*/
