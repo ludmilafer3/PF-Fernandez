@@ -79,19 +79,13 @@ h2:hover {
 
 /*termina pagina de inicio*/
 /*PAGINA PRODUCTOS*/
-/*FONDO EN LA PAGINA DE PRODUCTOS*/
-.fondo {
-  background-image: url(../img/patron-articulos-cocina-cocinar-postres-reposteria-estilo-dibujos-animados_313437-359.avif);
-}
-
 /*PRODUCTOS CONTENEDOR DE LAS CARDS*/
 .contenedor-cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  position: relative;
+  gap: 35px;
 }
 @media (min-width: 768px) {
   .contenedor-cards {
@@ -111,42 +105,30 @@ h2:hover {
   }
 }
 
-.card-img-top {
-  height: 250px;
-}
-
-/*NOMBRES DE LOS PRODUCTOS*/
-.card-title {
-  height: 10px;
-  color: palevioletred;
-}
-
-/*CUANTAS UNIDADES?*/
-.input-productos {
-  background-color: white;
-  height: 22px;
-  width: 40px;
-  position: absolute;
-  bottom: 0;
-  right: 26px;
-  top: 351px;
-  border: solid palevioletred 1px;
-}
-
-/*PEDIR*/
-.card-link {
-  color: palevioletred;
-  background-color: pink;
-  font-size: 20px;
-  padding: 5px;
-  border-radius: 10px;
-}
-
 .card {
-  transition: all 1.3s;
+  position: relative;
+  transition: all 1s;
 }
 .card:hover {
-  transform: scale(1.04);
+  transform: scale(1.08);
+}
+.card .card-body1 {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  position: absolute;
+  top: 138px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+.card .card-text {
+  color: white;
+  margin-left: 5px;
+}
+.card .card-img-top {
+  height: 196px;
 }
 
 /*FILTROS*/
@@ -287,6 +269,10 @@ h2:hover {
     margin: 0 300px;
   }
 }
+.contenedor-formulario label, .contenedor-formulario .genero {
+  color: white;
+  font-size: 18px;
+}
 
 .form-label:hover {
   color: pink;
@@ -308,11 +294,6 @@ h2:hover {
 .submit:active {
   background-color: palevioletred;
   color: white;
-}
-
-.contenedor-formulario label, .genero {
-  color: white;
-  font-size: 18px;
 }
 
 .registrate {
@@ -339,8 +320,7 @@ h2:hover {
   align-items: center;
   margin: 20px 0;
 }
-
-.logo-cotillon {
+.padre-logo img {
   width: 150px;
   height: 150px;
   border-radius: 80px;
@@ -438,16 +418,24 @@ header {
 .navbar-brand, .nav-link {
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: pink;
+  transition: all 0.3s;
 }
 .navbar-brand:hover, .nav-link:hover {
   color: palevioletred;
   background-color: pink;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .navbar-brand:active, .nav-link:active {
   background-color: palevioletred;
-  color: pink;
+  color: white;
+}
+
+.navbar-brand.active {
+  color: white;
+}
+.navbar-brand.active:hover {
+  color: palevioletred;
 }
 
 /*# sourceMappingURL=styles.css.map */

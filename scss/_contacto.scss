@@ -20,6 +20,12 @@
   
       margin: 0 300px;
     }
+
+    label, .genero{
+      color: white;
+      font-size: 18px;
+      
+    }
     
   }
   
@@ -49,13 +55,6 @@
   
   } 
 
-
-
-  .contenedor-formulario label, .genero{
-    color: white;
-    font-size: 18px;
-    
-  }
   .registrate{
     font-size: 35px;
     text-align: center;
@@ -79,14 +78,15 @@
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+
+    img{
+      width: 150px;
+      height: 150px;
+      border-radius: 80px;
+    }
   }
 
 
-  .logo-cotillon{
-    width: 150px;
-    height: 150px;
-    border-radius: 80px;
-  }
 
 
 

@@ -14,8 +14,6 @@
     }
 }
 
-
-
 header{
     background-color: palevioletred;
     margin-bottom: 20px;
@@ -24,19 +22,27 @@ header{
 .navbar-brand, .nav-link{
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: pink;
+    transition: all 0.3s;
+    
 
     &:hover{
         color: palevioletred;
         background-color: pink;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
     &:active{
         background-color: palevioletred;
-        color: pink;
+        color: white;
     }
 }
 
+.navbar-brand.active{
+    color: white;
 
+    &:hover{
+        color: palevioletred;
+    }
+}
 
