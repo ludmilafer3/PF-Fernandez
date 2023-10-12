@@ -1,16 +1,12 @@
   /*PAGINA QUIENES SOMOS?*/
   .descripcion-padre{
-    display: flex;
-    flex-direction: column;    
+    @include flex-column;
   }
   
   .descripcion{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flex-fila;
     gap: 10px;
-    background-color: white;
+    background-color: $color-terciario;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -26,8 +22,7 @@
     }
 
     img{
-      width: 100px;
-      height: 100px;
+      display: none;
     }
     
     &:nth-child(even){
@@ -35,18 +30,24 @@
       
     }
 
-    
-  @media(min-width: 1024px){
-    img{
-      width: 150px;
-      height: 150px;
+    @media(min-width: 440px){
+      img{
+        display: block;
+        width: 100px;
+        height: 100px;
+      }
     }
-  }
+    
+    @media(min-width: $desktop){
+      img{
+        width: 150px;
+        height: 150px;
+      }
+    }
   }
 
   
   /*ACORDION*/
   .accordion{
-    margin: 10px ;
-
+    margin: 10px;
   }

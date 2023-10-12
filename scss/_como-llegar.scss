@@ -4,14 +4,19 @@
     display: block;
     margin: 0 auto;
     padding: 20px;
+    transition: all 1s;
 
-    @media(min-width: 768px){
+    &:hover{
+      transform: scale(1.08);
+    }
+    
+    @media(min-width: $table){
       
           width: 600px;
           height: 400px;
     
     }
-    @media(min-width: 1024px){
+    @media(min-width: $desktop){
       
           width: 800px;
           height: 500px;
@@ -21,7 +26,7 @@
   }
     
   .ubicacion{
-    color: white;
+    color: $color-terciario
   }
   
   

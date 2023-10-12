@@ -73,10 +73,8 @@
   }
 
   .padre-logo{
-    background-color: palevioletred;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
+    background-color: $color-primario;
     margin: 20px 0;
 
     img{
@@ -85,8 +83,6 @@
       border-radius: 80px;
     }
   }
-
-
 
 
 
