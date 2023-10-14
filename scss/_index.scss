@@ -158,3 +158,55 @@
   background-image: url(../img/decoracionfiesta.jpg);
 }
 
+.text-ofertas{
+  background-color: $color-primario;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: $color-terciario;
+  margin-top: 10px
+}
+
+.contenedor-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+  .card-index{
+    background-color: $color-primario;
+    position: relative;
+    border-radius: 10px;
+
+    img{
+      height: 250px;
+      border-radius: 10px;
+    }
+
+    .card-body{
+      @include flex-column;
+      color: $color-terciario;
+      margin-top: 10px;
+
+      a{
+        background-color: $color-secundario;
+        color: $color-primario;
+        margin-bottom: 5px;
+        
+      }
+    }
+
+
+    h6{
+      background-color: black;
+      color: $color-terciario;
+      position: absolute;
+      top: 0;
+      right: -15px;
+      padding: 10px;
+    
+    }
+}
+
+

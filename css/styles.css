@@ -146,6 +146,46 @@ h2:hover {
   background-image: url(../img/decoracionfiesta.jpg);
 }
 
+.text-ofertas {
+  background-color: palevioletred;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-top: 10px;
+}
+
+.contenedor-card .card-index {
+  background-color: palevioletred;
+  position: relative;
+  border-radius: 10px;
+}
+.contenedor-card .card-index img {
+  height: 250px;
+  border-radius: 10px;
+}
+.contenedor-card .card-index .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 10px;
+}
+.contenedor-card .card-index .card-body a {
+  background-color: pink;
+  color: palevioletred;
+  margin-bottom: 5px;
+}
+.contenedor-card .card-index h6 {
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  padding: 10px;
+}
+
 /*PAGINA PRODUCTOS*/
 /*PRODUCTOS CONTENEDOR DE LAS CARDS*/
 .contenedor-cards {
