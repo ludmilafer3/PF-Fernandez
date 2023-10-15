@@ -3,10 +3,7 @@
 
   /*PRODUCTOS CONTENEDOR DE LAS CARDS*/
   .contenedor-cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column;
     gap: 35px;
 
     @media(min-width: 768px){
@@ -61,78 +58,4 @@
   }
 }
 
-
-
-
-
-  /*FILTROS*/
-  /*LABEL*/
-  .opciones{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 40px;
-
-    label{
-      background-color: palevioletred;
-      color: white;
-      font-size: 20px;
-      padding: 5px;
-      cursor: pointer;
-      border: solid 1px pink;
-
-      &:hover{
-        background-color: pink;
-        color: palevioletred;
-        border: solid palevioletred 2px;
-      
-      }
-    }
-
-    @media(min-width: 768px){
-          flex-direction: row;
-    }
-
-
-  }
-  
-  /*BORRO LOS INPUTS*/
-  #saladas, #dulces, #todos{
-    display: none;
-  }
-  .saladas, .dulces{
-    display: none;
-  }
-  
-  #saladas:checked ~ .contenedor-cards .saladas{
-    display: flex;
-  }
-  #dulces:checked ~ .contenedor-cards .dulces{
-    display: flex;
-  }
-  
-  #todos:checked  ~ .contenedor-cards .dulces,
-  #todos:checked ~ .contenedor-cards .saladas{
-    display: flex;
-  }
-
-  @mixin fondo-opcion {
-    background-color: pink;
-    color: palevioletred;
-    border: solid palevioletred 2px;
-  }
-  
-  #saladas:checked ~ .opciones .pro-saladas{
-    @include fondo-opcion();
-  }
-  #dulces:checked ~ .opciones .pro-dulce{
-    @include fondo-opcion();
-  }
-  #todos:checked ~ .opciones .pro-todos{
-    @include fondo-opcion();
-  }
-  
-
-  /*termina la pagina de productos*/
+/* la pagina de productos*/

@@ -37,12 +37,6 @@ h2:hover {
 }
 
 /*PAGINA DE INICIO*/
-.logo-inicio {
-  width: 100%;
-  height: 300px;
-  margin-bottom: 10px;
-}
-
 .img-portada {
   height: 130px;
   border-radius: 90px;
@@ -130,6 +124,10 @@ h2:hover {
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
+  transition: all 1.5s;
+}
+.fotos1:hover, .fotos2:hover, .fotos3:hover {
+  transform: scale(0.93);
 }
 
 .fotos1 {
@@ -155,6 +153,26 @@ h2:hover {
   margin-top: 10px;
 }
 
+.contenedor-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .contenedor-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .contenedor-card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .contenedor-card .card-index {
   background-color: palevioletred;
   position: relative;
@@ -239,76 +257,7 @@ h2:hover {
   height: 196px;
 }
 
-/*FILTROS*/
-/*LABEL*/
-.opciones {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 40px;
-}
-.opciones label {
-  background-color: palevioletred;
-  color: white;
-  font-size: 20px;
-  padding: 5px;
-  cursor: pointer;
-  border: solid 1px pink;
-}
-.opciones label:hover {
-  background-color: pink;
-  color: palevioletred;
-  border: solid palevioletred 2px;
-}
-@media (min-width: 768px) {
-  .opciones {
-    flex-direction: row;
-  }
-}
-
-/*BORRO LOS INPUTS*/
-#saladas, #dulces, #todos {
-  display: none;
-}
-
-.saladas, .dulces {
-  display: none;
-}
-
-#saladas:checked ~ .contenedor-cards .saladas {
-  display: flex;
-}
-
-#dulces:checked ~ .contenedor-cards .dulces {
-  display: flex;
-}
-
-#todos:checked ~ .contenedor-cards .dulces,
-#todos:checked ~ .contenedor-cards .saladas {
-  display: flex;
-}
-
-#saladas:checked ~ .opciones .pro-saladas {
-  background-color: pink;
-  color: palevioletred;
-  border: solid palevioletred 2px;
-}
-
-#dulces:checked ~ .opciones .pro-dulce {
-  background-color: pink;
-  color: palevioletred;
-  border: solid palevioletred 2px;
-}
-
-#todos:checked ~ .opciones .pro-todos {
-  background-color: pink;
-  color: palevioletred;
-  border: solid palevioletred 2px;
-}
-
-/*termina la pagina de productos*/
+/* la pagina de productos*/
 /*PAGINA QUIENES SOMOS?*/
 .descripcion-padre {
   display: flex;
@@ -332,6 +281,7 @@ h2:hover {
 }
 .descripcion:hover {
   transform: scale(1.02);
+  background-color: palevioletred;
 }
 .descripcion p {
   width: 85%;
