@@ -17,7 +17,7 @@ const cardProductos = (productos) => {
 
         card.className = "producto"
         card.innerHTML = `
-        <div class="card-index" style="width: 18rem;">
+        <div class="card-index"  style="width: 18rem;">
             <img src=${imagen} class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${nombre}</h5>
@@ -36,6 +36,7 @@ const cardProductos = (productos) => {
                 title: "Agregado al carrito",
                 showConfirmButton: false,
                 timer: 1500
+
             });
 
             comprarProducto(id);

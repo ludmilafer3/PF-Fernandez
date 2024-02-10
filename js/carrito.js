@@ -2,6 +2,8 @@ import { productosDisponibles } from "./cotillon.js"
 
 JSON.parse(sessionStorage.getItem("carrito")) === null && sessionStorage.setItem("carrito", JSON.stringify([]));
 
+
+
 let carrito = JSON.parse(sessionStorage.getItem("carrito"));
 
 export const comprarProducto = (idProducto) => {
@@ -35,6 +37,6 @@ export const comprarProducto = (idProducto) => {
     }
     carrito = JSON.parse(sessionStorage.getItem("carrito"));
 
-    console.log(carrito);
-}
+    console.log(carrito)
 
+}
